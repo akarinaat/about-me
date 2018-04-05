@@ -93,42 +93,26 @@ console.log(userName + ' tried to guess the number I was thinking up to 4 times.
 
 
 //Question 7
-
-
-
-var favoriteAnimals = ['elephant','dog','horse'];
-
-var guessChances = 6;
-
-while(guessChances > 0) {
-  var userGuess = prompt('Guess one of my favorite animals. You have 6 chances.');
-  //var anotherChance = prompt('Keep trying!');
-  guessChances --;
-  for(i=0; i < favoriteAnimals.length; i++){
-
-  }
-}
-
-
-
-//var rightAnswer = false;
+var rightAnswer = false;
 var numberOfChances = 6;
-while(numberOfChances > 0) {
+while(numberOfChances > 0 && rightAnswer === false) {
   var userGuess = prompt('Guess one of my favorite animals. You have 6 chances.').toLowerCase();
   var favoriteAnimals = ['dog','elephant','horse'];
   numberOfChances --;
-  //userGuess = false;
-  for (var i = 0; i < favoriteAnimals.length; i++){
-    console.log('The animal is ' + userGuess);
+  console.log('The user guessed the animal ' + userGuess);
+  for (var i = 0; i < favoriteAnimals.length; i++){ 
     if (userGuess === favoriteAnimals[i]){
       alert('Great! you got it!');
-      //rightAnswer = true;
+      rightAnswer = true;
       break;
     }
     else {
-      alert('Keep trying');
+      console.log(userGuess + ' was not item ' + i + ' in the array');
     }
   }
+  if (rightAnswer === false) {
+    alert('try again');
+  } 
 
   // if (rightAnswer === true){
   //   alert('Keep trying.');
