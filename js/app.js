@@ -119,12 +119,22 @@ while(numberOfChances > 0) {
   numberOfChances --;
   //userGuess = false;
   for (var i = 0; i < favoriteAnimals.length; i++){
+    console.log('The animal is ' + userGuess);
     if (userGuess === favoriteAnimals[i]){
       //then
       alert('Great! you got it!');
-      rightAnswer = true; } break;
+      rightAnswer = true;
+      break;
+    }
+    else {
+      alert('Keep trying');
+    }
   }
-  if (userGuess !== favoriteAnimals) {
-    alert('Keep trying!');
-  }
+
+  // if (rightAnswer === true){
+  //   alert('Keep trying.');
+  //   rightAnswer = false;
+  //   break;
+  // }
+
 }
