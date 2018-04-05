@@ -1,117 +1,117 @@
-// 'use strict';
+'use strict';
 
-// var userName = prompt('What is your Name?');
+var userName = prompt('What is your Name?');
 
-// alert('Hello ' + userName + '!' +' You are about to answer some questions about your experience in CodeFellows so far. Please answer with yes or no.');
+alert('Hello ' + userName + '!' +' You are about to answer some questions about your experience in CodeFellows so far. Please answer with yes or no.');
 
-// //Question 1
+//Question 1
 
-// var havingFun = prompt('Are you having fun in code 201?').toLowerCase();
+var havingFun = prompt('Are you having fun in code 201?').toLowerCase();
 
-// if(havingFun === 'yes'){
-//   alert('Awesome! Let\'s keep going');
-// } else if (havingFun === 'no') {
-//   alert('Don\'t worry about it, it will get better');
-// } else {
-//   alert('Please answer yes or no.');
-// }
+if(havingFun === 'yes'){
+  alert('Awesome! Let\'s keep going');
+} else if (havingFun === 'no') {
+  alert('Don\'t worry about it, it will get better');
+} else {
+  alert('Please answer yes or no.');
+}
 
-// console.log('Is ' + userName + ' having fun in code 201?. the answer is ' + havingFun);
+console.log('Is ' + userName + ' having fun in code 201?. the answer is ' + havingFun);
 
-// //Question 2
+//Question 2
 
-// var fridayLunch = prompt('Are you bringing your own lunch on friday?').toLowerCase();
+var fridayLunch = prompt('Are you bringing your own lunch on friday?').toLowerCase();
 
-// if(fridayLunch === 'yes'){
-//   alert('Good! We\'re having guests on Friday and you don\'t want to miss it.');
-// } else {
-//   alert('You should :), remember we\'ll have guests and whatever you can learn from them would be good content for your Journal.');
-// }
-// console.log(userName + ' answered ' + fridayLunch + ' the right answer was yes');
+if(fridayLunch === 'yes'){
+  alert('Good! We\'re having guests on Friday and you don\'t want to miss it.');
+} else {
+  alert('You should :), remember we\'ll have guests and whatever you can learn from them would be good content for your Journal.');
+}
+console.log(userName + ' answered ' + fridayLunch + ' the right answer was yes');
 
-// //Question 3
+//Question 3
 
-// var weekEnd = prompt('Are you excited for the weekend?').toLowerCase();
-
-
-// if(weekEnd === 'yes'){
-//   alert('Great! I\'m sure you will do your homework and have fun too, that is important.');
-// } else if (weekEnd === 'no') {
-//   alert('Well... it\'ll come anyway, try to have fun.');
-// } else {
-//   alert('Please answer yes or no.');
-// }
+var weekEnd = prompt('Are you excited for the weekend?').toLowerCase();
 
 
-// console.log('Will ' + userName + ' have fun this weekend?. The answer is ' + weekEnd);
+if(weekEnd === 'yes'){
+  alert('Great! I\'m sure you will do your homework and have fun too, that is important.');
+} else if (weekEnd === 'no') {
+  alert('Well... it\'ll come anyway, try to have fun.');
+} else {
+  alert('Please answer yes or no.');
+}
 
-// //Question 4
 
-// var howFun = prompt('Do you think I\'m funny?').toLowerCase();
+console.log('Will ' + userName + ' have fun this weekend?. The answer is ' + weekEnd);
 
-// if (howFun === 'yes'){
-//   alert('Good! We can be friends!');
-// } else if (howFun === 'no'){
-//   alert('Reconsider :)');
-// } else {
-//   alert('Please answer yes or no.');
-// }
-// console.log(userName + ' answered ' + howFun + ' and the real answer is yes');
+//Question 4
 
-// //Question 5
+var howFun = prompt('Do you think I\'m funny?').toLowerCase();
 
-// var homeWork = prompt('Have you been doing your Journal?').toLowerCase();
+if (howFun === 'yes'){
+  alert('Good! We can be friends!');
+} else if (howFun === 'no'){
+  alert('Reconsider :)');
+} else {
+  alert('Please answer yes or no.');
+}
+console.log(userName + ' answered ' + howFun + ' and the real answer is yes');
 
-// if (homeWork === 'yes') {
-//   alert('Great! Keep doing it.');
-// } else {
-//   alert('Don\'t forget to do it, it can save you at the end');
-// }
-// console.log(userName + ' answered ' + homeWork + ' and the real answer is yes');
+//Question 5
 
-// // //Question 6
+var homeWork = prompt('Have you been doing your Journal?').toLowerCase();
 
-// var guessNumber = 0;
-// var myNumber = 13;
-// var count = 1;
+if (homeWork === 'yes') {
+  alert('Great! Keep doing it.');
+} else {
+  alert('Don\'t forget to do it, it can save you at the end');
+}
+console.log(userName + ' answered ' + homeWork + ' and the real answer is yes');
 
-// while(guessNumber !== myNumber && count < 4){
-//   guessNumber = prompt('You have 4 chances to guess a number from 1 to 15');
-//   if (guessNumber < myNumber){
-//     alert('Too low, keep trying');
-//   } else if(guessNumber > myNumber){
-//     alert('too high, keep trying');
-//   } else {
-//     alert('You got it! yeiii');
-//   }
-//   count ++;
-//   if(count >= 4){
-//     alert('Nice try! But\'s it over buddy :).');
-//   }
-// }
-// console.log(userName + ' tried to guess the number I was thinking up to 4 times.');
+// //Question 6
+
+var guessNumber = 0;
+var myNumber = 13;
+var count = 1;
+
+while(guessNumber !== myNumber && count < 4){
+  guessNumber = prompt('You have 4 chances to guess a number from 1 to 15');
+  if (guessNumber < myNumber){
+    alert('Too low, keep trying');
+  } else if(guessNumber > myNumber){
+    alert('too high, keep trying');
+  } else {
+    alert('You got it! yeiii');
+  }
+  count ++;
+  if(count >= 4){
+    alert('Nice try! But\'s it over buddy :).');
+  }
+}
+console.log(userName + ' tried to guess the number I was thinking up to 4 times.');
 
 
 //Question 7
 
 
 
-// var favoriteAnimals = ['elephant','dog','horse'];
+var favoriteAnimals = ['elephant','dog','horse'];
 
-// var guessChances = 6;
+var guessChances = 6;
 
-// while(guessChances > 0) {
-//   var userGuess = prompt('Guess one of my favorite animals. You have 6 chances.');
-//   //var anotherChance = prompt('Keep trying!');
-//   guessChances --;
-//   for(i=0; i < favoriteAnimals.length; i++){
+while(guessChances > 0) {
+  var userGuess = prompt('Guess one of my favorite animals. You have 6 chances.');
+  //var anotherChance = prompt('Keep trying!');
+  guessChances --;
+  for(i=0; i < favoriteAnimals.length; i++){
 
-//   }
-// }
+  }
+}
 
 
 
-var rightAnswer = false;
+//var rightAnswer = false;
 var numberOfChances = 6;
 while(numberOfChances > 0) {
   var userGuess = prompt('Guess one of my favorite animals. You have 6 chances.').toLowerCase();
@@ -121,9 +121,8 @@ while(numberOfChances > 0) {
   for (var i = 0; i < favoriteAnimals.length; i++){
     console.log('The animal is ' + userGuess);
     if (userGuess === favoriteAnimals[i]){
-      //then
       alert('Great! you got it!');
-      rightAnswer = true;
+      //rightAnswer = true;
       break;
     }
     else {
