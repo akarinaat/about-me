@@ -111,24 +111,24 @@ while(guessChances > 0) {
 
 
 
-//var rightAnswer = false;
+var rightAnswer = false;
 var numberOfChances = 6;
 while(numberOfChances > 0) {
   var userGuess = prompt('Guess one of my favorite animals. You have 6 chances.').toLowerCase();
   var favoriteAnimals = ['dog','elephant','horse'];
   numberOfChances --;
-  //userGuess = false;
+  userGuess = false;
   for (var i = 0; i < favoriteAnimals.length; i++){
     console.log('The animal is ' + userGuess);
     if (userGuess === favoriteAnimals[i]){
       alert('Great! you got it!');
-      //rightAnswer = true;
+      rightAnswer = true;
       break;
     }
     else {
-      alert('Keep trying');
+      prompt('Keep trying');
     }
-  }
+  }if ()
 
   // if (rightAnswer === true){
   //   alert('Keep trying.');
